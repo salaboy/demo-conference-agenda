@@ -55,7 +55,7 @@ public class DemoApplication {
         return agendaItems.stream().filter(p -> p.getId().equals(id)).findFirst();
     }
 
-    @ZeebeWorker(type = "agenda")
+    @ZeebeWorker(type = "agenda-publish")
     public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
         Proposal proposal = (Proposal) job.getVariablesAsMap().get("proposal");
         newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
