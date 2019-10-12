@@ -5,6 +5,7 @@ import com.salaboy.conferences.agenda.model.Proposal;
 import io.grpc.internal.JsonParser;
 import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
+import io.zeebe.spring.client.EnableZeebeClient;
 import io.zeebe.spring.client.annotation.ZeebeWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -15,14 +16,14 @@ import java.util.*;
 
 @SpringBootApplication
 @RestController
-
+@EnableZeebeClient
 public class DemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Value("${version:0}")
+    @Value("${version:0.0.0}")
     private String version;
 
     private Set<AgendaItem> agendaItems = new TreeSet<>(new Comparator<AgendaItem>() {
@@ -55,7 +56,7 @@ public class DemoApplication {
         return agendaItems.stream().filter(p -> p.getId().equals(id)).findFirst();
     }
 
-    @ZeebeWorker(type = "agenda-publish")
+    @ZeebeWorker(name="agenda-worker", type = "agenda-publish")
     public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
         Proposal proposal = (Proposal) job.getVariablesAsMap().get("proposal");
         newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
