@@ -1,8 +1,8 @@
 package com.salaboy.conferences.agenda;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.salaboy.conferences.agenda.model.AgendaItem;
 import com.salaboy.conferences.agenda.model.Proposal;
-import io.grpc.internal.JsonParser;
 import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
 import io.zeebe.spring.client.EnableZeebeClient;
@@ -10,6 +10,8 @@ import io.zeebe.spring.client.annotation.ZeebeWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.json.JsonParser;
+import org.springframework.boot.json.JsonParserFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -26,6 +28,7 @@ public class DemoApplication {
     @Value("${version:0.0.0}")
     private String version;
 
+    private ObjectMapper objectMapper = new ObjectMapper();
     private Set<AgendaItem> agendaItems = new TreeSet<>(new Comparator<AgendaItem>() {
         @Override
         public int compare(AgendaItem t, AgendaItem t1) {
@@ -56,9 +59,9 @@ public class DemoApplication {
         return agendaItems.stream().filter(p -> p.getId().equals(id)).findFirst();
     }
 
-    @ZeebeWorker(name="agenda-worker", type = "agenda-publish")
+    @ZeebeWorker(name = "agenda-worker", type = "agenda-publish")
     public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
-        Proposal proposal = (Proposal) job.getVariablesAsMap().get("proposal");
+        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
         newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
         client.newCompleteCommand(job.getKey()).send();
     }
