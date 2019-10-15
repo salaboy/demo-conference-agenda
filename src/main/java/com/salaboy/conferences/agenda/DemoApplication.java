@@ -2,6 +2,11 @@ package com.salaboy.conferences.agenda;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.salaboy.conferences.agenda.model.AgendaItem;
+import com.salaboy.conferences.agenda.model.Proposal;
+import io.zeebe.client.api.response.ActivatedJob;
+import io.zeebe.client.api.worker.JobClient;
+import io.zeebe.spring.client.EnableZeebeClient;
+import io.zeebe.spring.client.annotation.ZeebeWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +16,7 @@ import java.util.*;
 
 @SpringBootApplication
 @RestController
+@EnableZeebeClient
 public class DemoApplication {
 
     public static void main(String[] args) {
@@ -50,5 +56,13 @@ public class DemoApplication {
     public Optional<AgendaItem> getById(@PathVariable("id") String id) {
         return agendaItems.stream().filter(p -> p.getId().equals(id)).findFirst();
     }
+
+    @ZeebeWorker(name = "agenda-worker", type = "agenda-publish")
+    public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
+        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
+        newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
+        client.newCompleteCommand(job.getKey()).send();
+    }
+
 
 }
