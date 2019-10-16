@@ -2,11 +2,6 @@ package com.salaboy.conferences.agenda;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.salaboy.conferences.agenda.model.AgendaItem;
-import com.salaboy.conferences.agenda.model.Proposal;
-import io.zeebe.client.api.response.ActivatedJob;
-import io.zeebe.client.api.worker.JobClient;
-import io.zeebe.spring.client.EnableZeebeClient;
-import io.zeebe.spring.client.annotation.ZeebeWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
