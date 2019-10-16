@@ -16,7 +16,7 @@ import java.util.*;
 
 @SpringBootApplication
 @RestController
-@EnableZeebeClient
+//@EnableZeebeClient
 public class DemoApplication {
 
     public static void main(String[] args) {
@@ -57,12 +57,12 @@ public class DemoApplication {
         return agendaItems.stream().filter(p -> p.getId().equals(id)).findFirst();
     }
 
-    @ZeebeWorker(name = "agenda-worker", type = "agenda-publish")
-    public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
-        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
-        newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
-        client.newCompleteCommand(job.getKey()).send();
-    }
+//    @ZeebeWorker(name = "agenda-worker", type = "agenda-publish")
+//    public void newAgendaItemJob(final JobClient client, final ActivatedJob job) {
+//        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
+//        newAgendaItem(new AgendaItem(proposal.getTitle(), proposal.getAuthor(), new Date()));
+//        client.newCompleteCommand(job.getKey()).send();
+//    }
 
 
 }
