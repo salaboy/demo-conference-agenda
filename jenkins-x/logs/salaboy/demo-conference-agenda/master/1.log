@@ -1,20 +1,20 @@
 
-Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jqbn2[0m
-{"level":"warn","ts":1572876057.1580327,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572876057.158839,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-6xtb7[0m
+{"level":"warn","ts":1572972577.4816282,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1572972577.4823895,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-99wc7[0m
-{"level":"warn","ts":1572876059.2239726,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1572876059.2326694,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-ctzb2[0m
+{"level":"warn","ts":1572972578.6567688,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1572972578.658907,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-agenda-l4sx7[0m
-{"level":"warn","ts":1572876152.635477,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572876153.8573992,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-agenda.git @ v0.0.24 in path /workspace/source"}
+Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-agenda-c2x5n[0m
+{"level":"warn","ts":1572972587.093987,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1572972588.355545,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-agenda.git @ v0.0.29 in path /workspace/source"}
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:ca5b899413a047ae7fe9fe8c399f903846bcb5c3
+Using SHAs from PULL_REFS=master:35b219460a48fc9bbda9d4547e42a7256432de83
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
@@ -26,7 +26,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------< com.*******.conferences:conference-agenda >--------------
-[INFO] Building Conference Agenda Service 0.0.24
+[INFO] Building Conference Agenda Service 0.0.29
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ conference-agenda ---
@@ -54,245 +54,49 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.*******.conferences.agenda.DemoApplicationTests
-14:03:04.769 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.agenda.DemoApplicationTests]
-14:03:04.793 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:03:04.812 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:03:04.862 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.agenda.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-14:03:04.883 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.agenda.DemoApplicationTests], using SpringBootContextLoader
-14:03:04.889 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTests-context.xml] does not exist
-14:03:04.892 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTestsContext.groovy] does not exist
-14:03:04.892 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.agenda.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:03:04.894 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.agenda.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:03:04.986 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.237 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/agenda/DemoApplication.class]
-14:03:05.246 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.agenda.DemoApplication for test class com.*******.conferences.agenda.DemoApplicationTests
-14:03:05.398 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.agenda.DemoApplicationTests]: using defaults.
-14:03:05.403 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-14:03:05.434 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-14:03:05.437 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-14:03:05.437 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-14:03:05.438 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9f116cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@12468a38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1aa7ecca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@59309333, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5876a9af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ec7ffd3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b239d7d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6572421, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b81ce95]
-14:03:05.441 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.442 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.447 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.448 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.448 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.449 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.464 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@158d2680 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@77847718 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-14:03:05.466 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.466 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-14:03:05.475 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@158d2680 testClass = DemoApplicationTests, testInstance = com.*******.conferences.agenda.DemoApplicationTests@1bd4fdd, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@77847718 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-14:03:05.531 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+16:50:11.815 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.agenda.DemoApplicationTests]
+16:50:11.834 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:50:11.852 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:50:11.954 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.agenda.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:50:12.107 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.agenda.DemoApplicationTests], using SpringBootContextLoader
+16:50:12.150 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTests-context.xml] does not exist
+16:50:12.154 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTestsContext.groovy] does not exist
+16:50:12.162 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.agenda.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:50:12.172 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.agenda.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:50:12.285 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.515 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/agenda/DemoApplication.class]
+16:50:12.541 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.agenda.DemoApplication for test class com.*******.conferences.agenda.DemoApplicationTests
+16:50:12.822 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.agenda.DemoApplicationTests]: using defaults.
+16:50:12.826 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:50:12.863 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+16:50:12.875 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+16:50:12.884 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:50:12.891 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7714e963, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20ce78ec, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@393671df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56620197, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6eda5c9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55b7a4e0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f058f00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@192d43ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72057ecf]
+16:50:12.910 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.918 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.928 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.934 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.942 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.948 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.967 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6aba2b86 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@158da8e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b1c1ea0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3712b94, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a765367, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4b553d26, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@27808f31], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+16:50:12.988 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:12.995 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+16:50:13.018 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6aba2b86 testClass = DemoApplicationTests, testInstance = com.*******.conferences.agenda.DemoApplicationTests@4a94ee4, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@158da8e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b1c1ea0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3712b94, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a765367, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4b553d26, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@27808f31], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+16:50:13.077 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
- ███████╗███████╗███████╗██████╗ ███████╗     ██████╗██╗     ██╗███████╗███╗   ██╗████████╗
- ╚══███╔╝██╔════╝██╔════╝██╔══██╗██╔════╝    ██╔════╝██║     ██║██╔════╝████╗  ██║╚══██╔══╝
-   ███╔╝ █████╗  █████╗  ██████╔╝█████╗      ██║     ██║     ██║█████╗  ██╔██╗ ██║   ██║
-  ███╔╝  ██╔══╝  ██╔══╝  ██╔══██╗██╔══╝      ██║     ██║     ██║██╔══╝  ██║╚██╗██║   ██║
- ███████╗███████╗███████╗██████╔╝███████╗    ╚██████╗███████╗██║███████╗██║ ╚████║   ██║
- ╚══════╝╚══════╝╚══════╝╚═════╝ ╚══════╝     ╚═════╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.9.RELEASE)
 
-  Spring-Boot:  (v2.1.9.RELEASE)
-  Spring-Zeebe: (v0.6.0)
-  Zeebe-Client: (v0.20.0)
-
-2019-11-04 14:03:06.288  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : Starting DemoApplicationTests on *******-demo-conference-agenda-1-from-build-pack-mgmjn-pod-1a22 with PID 69 (started by root in /workspace/source)
-2019-11-04 14:03:06.308  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : No active profile set, falling back to default profiles: default
-2019-11-04 14:03:09.018  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.processor.PostProcessorConfiguration' of type [io.zeebe.spring.client.config.processor.PostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.036  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration' of type [io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.052  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeExpressionResolver' of type [io.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.090  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeDeploymentValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.105  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deploymentPostProcessor' of type [io.zeebe.spring.client.config.processor.DeploymentPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.135  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeWorkerValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.152  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeWorkerPostProcessor' of type [io.zeebe.spring.client.config.processor.ZeebeWorkerPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.279  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebe.client-io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties' of type [io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.290  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration$$EnhancerBySpringCGLIB$$76ce0441] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.325  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'builder' of type [io.zeebe.client.impl.ZeebeClientBuilderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.327  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientSpringConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.351  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientObjectFactory' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration$$Lambda$224/78265654] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.375  INFO 69 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientLifecycle' of type [io.zeebe.spring.client.ZeebeClientLifecycle] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-04 14:03:09.492  INFO 69 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : zeebeWorker: ClassInfo(bean=com.*******.conferences.agenda.DemoApplication$$EnhancerBySpringCGLIB$$fb9b6706@53b98ff6, beanName=demoApplication)
-2019-11-04 14:03:12.371  INFO 69 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-11-04 14:03:14.453  INFO 69 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : register job worker: ZeebeWorkerValue(type=agenda-publish, name=agenda-worker, timeout=10000, maxJobsActive=2, beanInfo=MethodInfo(classInfo=ClassInfo(bean=com.*******.conferences.agenda.DemoApplication$$EnhancerBySpringCGLIB$$fb9b6706@53b98ff6, beanName=demoApplication), method=public void com.*******.conferences.agenda.DemoApplication.newAgendaItemJob(io.zeebe.client.api.worker.JobClient,io.zeebe.client.api.response.ActivatedJob)))
-2019-11-04 14:03:14.511  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : Started DemoApplicationTests in 8.962 seconds (JVM running for 10.602)
-2019-11-04 14:03:14.762  WARN 69 --- [ault-executor-0] io.grpc.internal.ManagedChannelImpl      : [Channel<1>: (**-zeebe:26500)] Failed to resolve name. status=Status{code=UNAVAILABLE, description=Unable to resolve host **-zeebe, cause=java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420)
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256)
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640)
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388)
-	... 5 more
-}
-2019-11-04 14:03:14.821  WARN 69 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker agenda-worker and job type agenda-publish
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
-2019-11-04 14:03:14.883  WARN 69 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker agenda-worker and job type agenda-publish
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
-2019-11-04 14:03:14.983  WARN 69 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker agenda-worker and job type agenda-publish
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.497 s - in com.*******.conferences.agenda.DemoApplicationTests
-2019-11-04 14:03:15.084  WARN 69 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker agenda-worker and job type agenda-publish
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
+2019-11-05 16:50:14.145  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : Starting DemoApplicationTests on *******-demo-conference-agenda-1-from-build-pack-pv4lt-pod-ecc1 with PID 69 (started by root in /workspace/source)
+2019-11-05 16:50:14.157  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : No active profile set, falling back to default profiles: default
+2019-11-05 16:50:22.617  INFO 69 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-05 16:50:24.485  INFO 69 --- [           main] c.s.c.agenda.DemoApplicationTests        : Started DemoApplicationTests in 11.386 seconds (JVM running for 13.968)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.117 s - in com.*******.conferences.agenda.DemoApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -300,22 +104,22 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ conference-agenda ---
-[INFO] Building jar: /workspace/source/target/conference-agenda-0.0.24.jar
+[INFO] Building jar: /workspace/source/target/conference-agenda-0.0.29.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.9.RELEASE:repackage (repackage) @ conference-agenda ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ conference-agenda ---
-[INFO] Installing /workspace/source/target/conference-agenda-0.0.24.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.24/conference-agenda-0.0.24.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.24/conference-agenda-0.0.24.pom
+[INFO] Installing /workspace/source/target/conference-agenda-0.0.29.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.29/conference-agenda-0.0.29.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.29/conference-agenda-0.0.29.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ conference-agenda ---
 [INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  42.109 s
-[INFO] Finished at: 2019-11-04T14:03:19Z
+[INFO] Total time:  39.038 s
+[INFO] Finished at: 2019-11-05T16:50:31Z
 [INFO] ------------------------------------------------------------------------
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
@@ -323,16 +127,16 @@ v0.38.0
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
-ERROR: logging before flag.Parse: E1104 14:03:20.692785      10 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-ERROR: logging before flag.Parse: E1104 14:03:20.725280      10 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-2019/11/04 14:03:20 No matching credentials were found, falling back on anonymous
+ERROR: logging before flag.Parse: E1105 16:50:32.636593      10 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E1105 16:50:32.642148      10 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/11/05 16:50:32 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:2f75fd4d652d8a4730b0e4ebbc9609e019283536e63aab95d30fb7c7f8d444fb: no such file or directory 
 [36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
-2019/11/04 14:03:22 No matching credentials were found, falling back on anonymous
+2019/11/05 16:50:33 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0002] cmd: EXPOSE                                  
 [36mINFO[0m[0002] Adding exposed port: 8080/tcp                
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.24.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.29.jar] 
 [36mINFO[0m[0002] Skipping unpacking as no commands require it. 
 [36mINFO[0m[0002] Taking snapshot of full filesystem...        
 [36mINFO[0m[0002] ENV PORT 8080                                
@@ -346,36 +150,36 @@ ERROR: logging before flag.Parse: E1104 14:03:20.725280      10 metadata.go:142]
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
 [36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.24.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.29.jar] 
 [36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0003] WORKDIR /opt                                 
-[36mINFO[0m[0003] cmd: workdir                                 
-[36mINFO[0m[0003] Changed working directory to /opt            
-[36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0003] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
-[36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
-2019/11/04 14:03:24 existing blob: sha256:740864fcc29dcd68c386fc2893b1fe5bf974e361523cb7cd32dd706fcfa93d82
-2019/11/04 14:03:24 existing blob: sha256:02c32ad92c0d8181bc1743181730c576205286effbb08239f8f613acda6d4889
-2019/11/04 14:03:24 existing blob: sha256:3da6fe7ff2ef0f58119eb2e8cb12c5c0b471527be95d43274b396f36fc5bbccd
-2019/11/04 14:03:24 existing blob: sha256:8d691f585fa8cec0eba196be460cfaffd69939782d6162986c3e0c5225d54f02
-2019/11/04 14:03:28 pushed blob: sha256:31390ae75837d0e054c8becbc951af6e8d3ecf069790e151396c00d5a823929d
-2019/11/04 14:03:28 pushed blob: sha256:541bff2a950281e800cfac01adab69a3206d13f91f53fbba41b3a089d04c2906
-2019/11/04 14:03:30 pushed blob: sha256:8fe93eb933af214ebf832c49fdb11df366ab334d8b6c0466d7b959105dbddf84
-2019/11/04 14:03:31 gcr.io/camunda-consulting-de/demo-conference-agenda:0.0.24: digest: sha256:92b99633a52a7a10f9bfe3d7c6df70e3d64eec6f69f6999ca2daa0ff86261a02 size: 1244
+[36mINFO[0m[0002] WORKDIR /opt                                 
+[36mINFO[0m[0002] cmd: workdir                                 
+[36mINFO[0m[0002] Changed working directory to /opt            
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+2019/11/05 16:50:36 existing blob: sha256:8d691f585fa8cec0eba196be460cfaffd69939782d6162986c3e0c5225d54f02
+2019/11/05 16:50:36 existing blob: sha256:740864fcc29dcd68c386fc2893b1fe5bf974e361523cb7cd32dd706fcfa93d82
+2019/11/05 16:50:36 existing blob: sha256:3da6fe7ff2ef0f58119eb2e8cb12c5c0b471527be95d43274b396f36fc5bbccd
+2019/11/05 16:50:36 existing blob: sha256:02c32ad92c0d8181bc1743181730c576205286effbb08239f8f613acda6d4889
+2019/11/05 16:50:39 pushed blob: sha256:3a8b7d4025ba4cae07f297c64222583f25f192d0bfbc35a58a99d253e22d3636
+2019/11/05 16:50:39 pushed blob: sha256:ff609bb369b1b086ff2ddad3aa14103349b59eb1230deffdc2dd1c39f6add971
+2019/11/05 16:50:41 pushed blob: sha256:a2aee9d94705a410c49a34beccbcba5e1a72bf1354bf85243b8b56c4e6553eae
+2019/11/05 16:50:42 gcr.io/camunda-consulting-de/demo-conference-agenda:0.0.29: digest: sha256:a23b2568ab3c73ecc64a3d2a4f9439d1968e2734d1165f32c71c13bd7ca7d62a size: 1244
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/demo-conference-agenda to an unshallow repository
-Generating change log from git ref eb893e3a22a9c35e79b668effb0478f269378415 => acc7f1b5ac58de4ea19c520e57be9a6c5fda9748
-WARNING: No release found for *******/demo-conference-agenda and tag v0.0.24 so creating a new release
-Updated the release information at https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.24
+Generating change log from git ref 2f90c1efe299599c1d919bd4b9c228141622e472 => 40923919f48f6a683b816a5776cc37a8e5b00050
+WARNING: No release found for *******/demo-conference-agenda and tag v0.0.29 so creating a new release
+Updated the release information at https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.29
 generated: /workspace/source/charts/demo-conference-agenda/templates/release.yaml
-Created Release demo-conference-agenda-0-0-24 resource in namespace **
-Updating PipelineActivity *******-demo-conference-agenda-master-1 with version 0.0.24
-Updated PipelineActivities *******-demo-conference-agenda-master-1 with release notes URL: https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.24
+Created Release demo-conference-agenda-0-0-29 resource in namespace **
+Updating PipelineActivity *******-demo-conference-agenda-master-1 with version 0.0.29
+Updated PipelineActivities *******-demo-conference-agenda-master-1 with release notes URL: https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.29
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
@@ -384,18 +188,20 @@ Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file demo-conference-agenda-0.0.24.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file demo-conference-agenda-0.0.29.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
 Showing logs for build [32msalaboy-demo-conference-agenda-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
-Promoting app demo-conference-agenda version 0.0.24 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-soujava-webinar-staging/pull/3
-Added label updatebot to Pull Request https://github.com/*******/environment-soujava-webinar-staging/pull/3
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/3
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/3
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/3
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/3
-Pull Request https://github.com/*******/environment-soujava-webinar-staging/pull/3 is merged at sha 3c23d1a164940926ffd8078ac42bf521f752872e
+Promoting app demo-conference-agenda version 0.0.29 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-soujava-**-staging/pull/7
+Added label updatebot to Pull Request https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/7
+Pull Request https://github.com/*******/environment-soujava-**-staging/pull/7 is merged at sha 4711f691c21342d20ca278bedebd42493ecfeab5
 Pull Request merged but we are not waiting for the update pipeline to complete!
 WARNING: Could not find the service URL in namespace **-staging for names demo-conference-agenda, **-demo-conference-agenda, **-staging-demo-conference-agenda
