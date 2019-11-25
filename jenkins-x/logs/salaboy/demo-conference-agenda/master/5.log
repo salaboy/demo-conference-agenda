@@ -1,32 +1,31 @@
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-gl7q8[0m
-{"level":"warn","ts":1572946999.75515,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572946999.7558858,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-rqvw9[0m
+{"level":"warn","ts":1574708489.170134,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574708489.1720607,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-t6b52[0m
-{"level":"warn","ts":1572947000.8629103,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1572947000.8644943,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-vrss6[0m
+{"level":"warn","ts":1574708490.3588064,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574708490.3606315,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-agenda-27vr7[0m
-{"level":"warn","ts":1572947008.0101395,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572947009.1862094,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-agenda.git @ v0.0.28 in path /workspace/source"}
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-agenda-kbhm7[0m
+{"level":"warn","ts":1574708498.3678453,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574708499.659309,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-agenda.git @ v0.0.35 in path /workspace/source"}
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:35b219460a48fc9bbda9d4547e42a7256432de83
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:27c6fad65a0fd29a9dfc06829e3a02b32fc5ab33
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
-Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
-OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------< com.*******.conferences:conference-agenda >--------------
-[INFO] Building Conference Agenda Service 0.0.28
+[INFO] Building Conference Agenda Service 0.0.35
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ conference-agenda ---
@@ -54,35 +53,35 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.*******.conferences.agenda.DemoApplicationTests
-09:43:46.973 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.agenda.DemoApplicationTests]
-09:43:46.987 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-09:43:47.008 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-09:43:47.070 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.agenda.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-09:43:47.108 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.agenda.DemoApplicationTests], using SpringBootContextLoader
-09:43:47.116 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTests-context.xml] does not exist
-09:43:47.118 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTestsContext.groovy] does not exist
-09:43:47.121 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.agenda.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-09:43:47.127 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.agenda.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-09:43:47.235 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.468 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/agenda/DemoApplication.class]
-09:43:47.473 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.agenda.DemoApplication for test class com.*******.conferences.agenda.DemoApplicationTests
-09:43:47.670 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.agenda.DemoApplicationTests]: using defaults.
-09:43:47.681 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-09:43:47.717 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-09:43:47.724 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-09:43:47.732 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-09:43:47.735 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7714e963, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20ce78ec, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@393671df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56620197, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6eda5c9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55b7a4e0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f058f00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@192d43ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72057ecf]
-09:43:47.740 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.747 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.752 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.752 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.756 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.763 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.772 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6aba2b86 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@158da8e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b1c1ea0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3712b94, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a765367, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4b553d26, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@27808f31], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-09:43:47.778 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.784 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
-09:43:47.802 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6aba2b86 testClass = DemoApplicationTests, testInstance = com.*******.conferences.agenda.DemoApplicationTests@4a94ee4, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@158da8e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b1c1ea0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3712b94, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a765367, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4b553d26, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@27808f31], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-09:43:47.842 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+19:02:12.552 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.agenda.DemoApplicationTests]
+19:02:12.564 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:02:12.592 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:02:12.655 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.agenda.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:02:12.720 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.agenda.DemoApplicationTests], using SpringBootContextLoader
+19:02:12.727 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTests-context.xml] does not exist
+19:02:12.729 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.agenda.DemoApplicationTests]: class path resource [com/*******/conferences/agenda/DemoApplicationTestsContext.groovy] does not exist
+19:02:12.729 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.agenda.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:02:12.730 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.agenda.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:02:12.840 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.149 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/agenda/DemoApplication.class]
+19:02:13.170 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.agenda.DemoApplication for test class com.*******.conferences.agenda.DemoApplicationTests
+19:02:13.569 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.agenda.DemoApplicationTests]: using defaults.
+19:02:13.570 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:02:13.666 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+19:02:13.723 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+19:02:13.725 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+19:02:13.726 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d9caaeb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42a15bdc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@44a59da3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27e47833, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f6745d6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27508c5d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f704591, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b5189ac, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e4d3ce5]
+19:02:13.732 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.734 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.738 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.743 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.746 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.747 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.765 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7c51f34b testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@5495333e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f8edcc5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3c0be339, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c1e2a9e, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@7748410a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@671a5887], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+19:02:13.770 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.771 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.agenda.DemoApplicationTests]
+19:02:13.830 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7c51f34b testClass = DemoApplicationTests, testInstance = com.*******.conferences.agenda.DemoApplicationTests@7d3d101b, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@5495333e testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.agenda.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f8edcc5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3c0be339, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c1e2a9e, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@7748410a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@671a5887], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+19:02:13.947 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -92,11 +91,11 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-11-05 09:43:48.605  INFO 70 --- [           main] c.s.c.agenda.DemoApplicationTests        : Starting DemoApplicationTests on *******-demo-conference-agenda-kbv4c-5-from-build-pack-czz7r-po with PID 70 (started by root in /workspace/source)
-2019-11-05 09:43:48.614  INFO 70 --- [           main] c.s.c.agenda.DemoApplicationTests        : No active profile set, falling back to default profiles: default
-2019-11-05 09:43:54.254  INFO 70 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-11-05 09:43:55.583  INFO 70 --- [           main] c.s.c.agenda.DemoApplicationTests        : Started DemoApplicationTests in 7.727 seconds (JVM running for 9.485)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.201 s - in com.*******.conferences.agenda.DemoApplicationTests
+2019-11-25 19:02:15.659  INFO 71 --- [           main] c.s.c.agenda.DemoApplicationTests        : Starting DemoApplicationTests on *******-demo-conference-agenda-**t7p-5-from-build-pack-fzkt4-po with PID 71 (started by root in /workspace/source)
+2019-11-25 19:02:15.671  INFO 71 --- [           main] c.s.c.agenda.DemoApplicationTests        : No active profile set, falling back to default profiles: default
+2019-11-25 19:02:26.541  INFO 71 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-25 19:02:28.333  INFO 71 --- [           main] c.s.c.agenda.DemoApplicationTests        : Started DemoApplicationTests in 14.31 seconds (JVM running for 18.785)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.412 s - in com.*******.conferences.agenda.DemoApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -104,39 +103,39 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ conference-agenda ---
-[INFO] Building jar: /workspace/source/target/conference-agenda-0.0.28.jar
+[INFO] Building jar: /workspace/source/target/conference-agenda-0.0.35.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.9.RELEASE:repackage (repackage) @ conference-agenda ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ conference-agenda ---
-[INFO] Installing /workspace/source/target/conference-agenda-0.0.28.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.28/conference-agenda-0.0.28.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.28/conference-agenda-0.0.28.pom
+[INFO] Installing /workspace/source/target/conference-agenda-0.0.35.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.35/conference-agenda-0.0.35.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-agenda/0.0.35/conference-agenda-0.0.35.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ conference-agenda ---
 [INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  27.720 s
-[INFO] Finished at: 2019-11-05T09:44:00Z
+[INFO] Total time:  51.941 s
+[INFO] Finished at: 2019-11-25T19:02:36Z
 [INFO] ------------------------------------------------------------------------
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
-v0.38.0
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v1.0.0
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
-ERROR: logging before flag.Parse: E1105 09:44:01.189136       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-ERROR: logging before flag.Parse: E1105 09:44:01.192154       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-2019/11/05 09:44:01 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:2f75fd4d652d8a4730b0e4ebbc9609e019283536e63aab95d30fb7c7f8d444fb: no such file or directory 
-[36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
-2019/11/05 09:44:02 No matching credentials were found, falling back on anonymous
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image openjdk:11-jre-slim   
+ERROR: logging before flag.Parse: E1125 19:02:36.935197       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E1125 19:02:36.938315       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/11/25 19:02:36 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:1623b24fe088e0aefcfe499da1b8d72f108e16dd906ffdfff570736bfbbb1473: no such file or directory 
+[36mINFO[0m[0001] Downloading base image openjdk:11-jre-slim   
+2019/11/25 19:02:38 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0002] cmd: EXPOSE                                  
 [36mINFO[0m[0002] Adding exposed port: 8080/tcp                
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.28.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.35.jar] 
 [36mINFO[0m[0002] Skipping unpacking as no commands require it. 
 [36mINFO[0m[0002] Taking snapshot of full filesystem...        
 [36mINFO[0m[0002] ENV PORT 8080                                
@@ -150,64 +149,64 @@ ERROR: logging before flag.Parse: E1105 09:44:01.192154       9 metadata.go:159]
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
 [36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.28.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-agenda-0.0.35.jar] 
 [36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
 [36mINFO[0m[0002] Taking snapshot of files...                  
 [36mINFO[0m[0002] WORKDIR /opt                                 
 [36mINFO[0m[0002] cmd: workdir                                 
 [36mINFO[0m[0002] Changed working directory to /opt            
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0002] CMD ["java", "-jar", "app.jar"]              
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-2019/11/05 09:44:04 existing blob: sha256:8d691f585fa8cec0eba196be460cfaffd69939782d6162986c3e0c5225d54f02
-2019/11/05 09:44:04 existing blob: sha256:740864fcc29dcd68c386fc2893b1fe5bf974e361523cb7cd32dd706fcfa93d82
-2019/11/05 09:44:04 existing blob: sha256:3da6fe7ff2ef0f58119eb2e8cb12c5c0b471527be95d43274b396f36fc5bbccd
-2019/11/05 09:44:04 existing blob: sha256:02c32ad92c0d8181bc1743181730c576205286effbb08239f8f613acda6d4889
-2019/11/05 09:44:08 pushed blob: sha256:9fe617f2b7ca2b0c415ba2dc0ffef7479dfc7301f7472d4c7088e7df9d79603f
-2019/11/05 09:44:08 pushed blob: sha256:9a3a475ab199a6be0cb73e13303b9476d123ed67fba8447c6c05a1f31e0b7610
-2019/11/05 09:44:10 pushed blob: sha256:201ecc4c76ca5f702ef6ce5eb0e21c4e646c0248edb8c68f0d7cee36e2ae2213
-2019/11/05 09:44:11 gcr.io/camunda-consulting-de/demo-conference-agenda:0.0.28: digest: sha256:93d54e864eedfc8b8277919a07261fc8dea989959b2acb38ba899054d44b9cd3 size: 1244
+2019/11/25 19:02:40 existing blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
+2019/11/25 19:02:40 existing blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
+2019/11/25 19:02:40 existing blob: sha256:8992c959a11ddefb3735efc010a2d670c008659dccb4712b85b3428c25437a0d
+2019/11/25 19:02:40 existing blob: sha256:eec880363624c27ef6cc7e146eb42bb15e84efbfe8f365f8ed8718804b44c61b
+2019/11/25 19:02:43 pushed blob: sha256:cccf5c7a159315ce216d7a09cc4c42ad4cab057198e2e33dbf0970afc1d20ff2
+2019/11/25 19:02:43 pushed blob: sha256:0f6e6cef07eb64d8023755737b45dc421489e3e0165a6563f786e8d431430633
+2019/11/25 19:02:46 pushed blob: sha256:b18c34b49c6959cfb1ef4780dd63d283b3119432f418856ca52a047576fb5b3e
+2019/11/25 19:02:47 gcr.io/camunda-consulting-de/demo-conference-agenda:0.0.35: digest: sha256:8339946df1a13ebff706c589dd8ae7a9a80471500d98ffb274bd3cafaa7585d4 size: 1243
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/demo-conference-agenda to an unshallow repository
-Generating change log from git ref 578b05d9589890f1f9e2dc391fa1d2b096dc9fee => 2f90c1efe299599c1d919bd4b9c228141622e472
+Generating change log from git ref f1e9d75c8ce9f9385d3396657a2cdf9c4e935c37 => 1cdff12e4726872f4a0d0d02efed49603bf0dc2c
 Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
 Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 35b219460a48fc9bbda9d4547e42a7256432de83 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 27c6fad65a0fd29a9dfc06829e3a02b32fc5ab33 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
 Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
 Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 35b219460a48fc9bbda9d4547e42a7256432de83 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 27c6fad65a0fd29a9dfc06829e3a02b32fc5ab33 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
 Finding issues in commit messages using git format
-WARNING: No release found for *******/demo-conference-agenda and tag v0.0.28 so creating a new release
-Updated the release information at https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.28
+WARNING: No release found for *******/demo-conference-agenda and tag v0.0.35 so creating a new release
+Updated the release information at https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.35
 generated: /workspace/source/charts/demo-conference-agenda/templates/release.yaml
-Created Release demo-conference-agenda-0-0-28 resource in namespace **
-Updating PipelineActivity *******-demo-conference-agenda-master-5 with version 0.0.28
-Updated PipelineActivities *******-demo-conference-agenda-master-5 with release notes URL: https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.28
+Created Release demo-conference-agenda-0-0-35 resource in namespace **
+Updating PipelineActivity *******-demo-conference-agenda-master-5 with version 0.0.35
+Updated PipelineActivities *******-demo-conference-agenda-master-5 with release notes URL: https://github.com/*******/demo-conference-agenda/releases/tag/v0.0.35
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file demo-conference-agenda-0.0.28.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file demo-conference-agenda-0.0.35.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
-Showing logs for build [32msalaboy-demo-conference-agenda-kbv4c-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+Showing logs for build [32msalaboy-demo-conference-agenda-jxt7p-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
-Promoting app demo-conference-agenda version 0.0.28 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-soujava-webinar-staging/pull/11
-Added label updatebot to Pull Request https://github.com/*******/environment-soujava-webinar-staging/pull/11
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/11
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/11
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/11
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/11
-got git provider status pending from PR https://github.com/*******/environment-soujava-webinar-staging/pull/11
-WARNING: Failed to merge the Pull Request https://github.com/*******/environment-soujava-webinar-staging/pull/11 due to PUT https://api.github.com/repos/*******/environment-soujava-webinar-staging/pulls/11/merge: 405 Pull Request is not mergeable [] maybe I don't have karma?
-Pull Request https://github.com/*******/environment-soujava-webinar-staging/pull/11 is merged at sha a6e1588c0eaee3f4201fad759949f63d710fd81e
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app demo-conference-agenda version 0.0.35 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-webinar-nov-staging/pull/20
+Added label updatebot to Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/20
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/20
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/20
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/20
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/20
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/20
+Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/20 is merged at sha f42ff17f56246af65bb525513dec0e87f90d0114
 Pull Request merged but we are not waiting for the update pipeline to complete!
