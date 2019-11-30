@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.salaboy.conferences</groupId>
     <artifactId>conference-agenda</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.37</version>
     <name>Conference Agenda Service</name>
     <description>Conference Agenda Service</description>
 
